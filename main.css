@@ -11,6 +11,12 @@
 body{
     background-color: lightgrey;
 }
+
+header{
+    width: 100%;
+    
+}
+
 nav{
     
     letter-spacing: 1px;
@@ -28,16 +34,33 @@ main{
     
 }
 
+.serif{
+    font-family: 'Merriweather', serif!important;
+    font-size: 6em;
+    color: white;
+    margin-top: 40px;
+    letter-spacing: 5px;
+
+}
+
+.non-serif{
+    font-family: 'Roboto Condensed', sans-serif!important;
+    margin-top: 40px;
+    font-size: 5em;
+    color: white;
+    letter-spacing: 5px;
+}
+
 .navigatie{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    align-items: center;
-    
-    padding: 5px;
+    text-indent: 50px;
+    margin: auto;
     
 }
+
 .logo{
     width: 5px;
     height: 5px;
@@ -49,10 +72,29 @@ main{
 
 .blokje{
     background-color: brown;
-    height: 30px;
-    width: 30px;
+    height: 5px;
+    width: 100%;
+    margin: auto;
 }
 
-.link{
+.link:link{
     text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+.link:hover{
+    background-color: red;
+    border-radius: 3px;
+    
+    
+    
+}
+
+.tekst{
+    width: 80%;
+    height: 150px;
+    color: black;
+    text-align: center;
+    background-color: cornsilk;
+    margin: auto;
 }
