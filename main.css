@@ -1,4 +1,7 @@
 :root{
+    --rood:#BE1622; 
+    --zwart:#000000;
+    --beige: #ACAA7D;
 
 }
 
@@ -9,7 +12,7 @@
 }
 
 body{
-    background-color: lightgrey;
+    background-color: var(--beige);
 }
 
 header{
@@ -18,11 +21,10 @@ header{
 }
 
 nav{
-    
     letter-spacing: 1px;
     width: 100%;
     height: 100px;
-    background-color: blue;
+    background-color: var(--rood);
 
     display: flex;
     flex-direction: row;
@@ -31,25 +33,11 @@ nav{
 }
 
 main{
-    
+    width: 100%;
+    height: auto;
 }
 
-.serif{
-    font-family: 'Merriweather', serif!important;
-    font-size: 6em;
-    color: white;
-    margin-top: 40px;
-    letter-spacing: 5px;
 
-}
-
-.non-serif{
-    font-family: 'Roboto Condensed', sans-serif!important;
-    margin-top: 40px;
-    font-size: 5em;
-    color: white;
-    letter-spacing: 5px;
-}
 
 .navigatie{
     display: flex;
@@ -58,7 +46,6 @@ main{
     flex-direction: row;
     text-indent: 50px;
     margin: auto;
-    
 }
 
 .logo{
@@ -71,7 +58,7 @@ main{
 }
 
 .blokje{
-    background-color: brown;
+    background-color: var(--rood);
     height: 5px;
     width: 100%;
     margin: auto;
@@ -83,7 +70,7 @@ main{
 
 }
 .link:hover{
-    background-color: red;
+    background-color: var(--rood);
     border-radius: 3px;
     
     
@@ -97,4 +84,12 @@ main{
     text-align: center;
     background-color: cornsilk;
     margin: auto;
+}
+
+.streep{
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(39% 0, 57% 0, 30% 100%, 11% 100%);
+
+    background-color: var(--rood);
 }
